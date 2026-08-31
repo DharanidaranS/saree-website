@@ -1,0 +1,416 @@
+import type { Product } from '../types';
+
+// ============================================================
+// PRODUCT DATA
+// All product information is centralized here.
+// To add new products, simply add a new object to this array.
+// Images use placeholder URLs — replace with your actual product photos.
+// ============================================================
+
+export const products: Product[] = [
+  {
+    id: 'prod-001',
+    name: 'Royal Kanchipuram Silk Saree',
+    category: 'kanchipuram',
+    price: 4999,
+    originalPrice: 6999,
+    discount: 29,
+    description:
+      'A magnificent Kanchipuram silk saree featuring traditional temple border motifs woven with pure gold zari. This timeless piece showcases the finest craftsmanship of South Indian silk weaving, with intricate peacock and floral patterns adorning the pallu. Perfect for weddings, festivals, and grand celebrations.',
+    shortDescription: 'Traditional temple border with pure gold zari work.',
+    fabric: 'Pure Kanchipuram Silk',
+    color: 'maroon',
+    colorHex: '#722F37',
+    images: [
+      '/images/category-kanchipuram.jpg',
+      '/images/category-silk.jpg',
+    ],
+    rating: 5,
+    reviewCount: 124,
+    featured: true,
+    newArrival: false,
+    bestSeller: true,
+    sareeLength: '6.3 meters (including blouse piece)',
+    blouseIncluded: true,
+    careInstructions: [
+      'Dry clean only',
+      'Store in a muslin cloth',
+      'Keep away from direct sunlight',
+      'Iron on low heat with a cotton cloth on top',
+    ],
+    shippingInfo: 'Free shipping across India. Delivery within 5-7 business days.',
+    returnPolicy: 'Easy 7-day return policy. Item must be unused with original tags.',
+  },
+  {
+    id: 'prod-002',
+    name: 'Rose Gold Tissue Saree',
+    category: 'designer',
+    price: 3499,
+    originalPrice: 4999,
+    discount: 30,
+    description:
+      'An ethereal rose gold tissue saree that catches light beautifully with every movement. The delicate shimmer of the tissue fabric is complemented by subtle pearl and sequin work along the border. A perfect blend of contemporary elegance and traditional grace.',
+    shortDescription: 'Ethereal shimmer with delicate pearl work.',
+    fabric: 'Tissue Silk',
+    color: 'gold',
+    colorHex: '#C9A96E',
+    images: [
+      '/images/rose-gold-saree.jpg',
+      '/images/party-wear-saree.jpg',
+    ],
+    rating: 4.8,
+    reviewCount: 89,
+    featured: true,
+    newArrival: true,
+    sareeLength: '6.3 meters (including blouse piece)',
+    blouseIncluded: true,
+    careInstructions: [
+      'Dry clean recommended',
+      'Store folded in soft fabric',
+      'Avoid contact with perfume or deodorant',
+    ],
+    shippingInfo: 'Free shipping across India. Delivery within 5-7 business days.',
+    returnPolicy: 'Easy 7-day return policy. Item must be unused with original tags.',
+  },
+  {
+    id: 'prod-003',
+    name: 'Midnight Blue Designer Saree',
+    category: 'designer',
+    price: 2899,
+    originalPrice: 3999,
+    discount: 28,
+    description:
+      'A stunning midnight blue designer saree featuring contemporary embroidery and sequin work. The rich navy blue fabric creates a dramatic silhouette while the intricate border work adds a touch of traditional elegance. Ideal for evening celebrations and cocktail parties.',
+    shortDescription: 'Contemporary embroidery on rich midnight blue.',
+    fabric: 'Georgette with Embroidery',
+    color: 'blue',
+    colorHex: '#1A237E',
+    images: [
+      '/images/category-designer.jpg',
+      '/images/rose-gold-saree.jpg',
+    ],
+    rating: 4.7,
+    reviewCount: 67,
+    featured: true,
+    newArrival: false,
+    sareeLength: '6.3 meters (including blouse piece)',
+    blouseIncluded: true,
+    careInstructions: [
+      'Dry clean only',
+      'Store flat or hang on padded hanger',
+      'Avoid wringing or twisting',
+    ],
+    shippingInfo: 'Free shipping across India. Delivery within 5-7 business days.',
+    returnPolicy: 'Easy 7-day return policy. Item must be unused with original tags.',
+  },
+  {
+    id: 'prod-004',
+    name: 'Soft Lavender Organza Saree',
+    category: 'organza',
+    price: 2499,
+    originalPrice: 3499,
+    discount: 29,
+    description:
+      'A dreamy soft lavender organza saree with delicate floral embroidery scattered across the drape. The lightweight, sheer fabric creates an effortlessly elegant look, perfect for daytime celebrations and festive gatherings. Features a beautifully embroidered scallop border.',
+    shortDescription: 'Dreamy lavender with delicate floral embroidery.',
+    fabric: 'Pure Organza',
+    color: 'lavender',
+    colorHex: '#B39DDB',
+    images: [
+      '/images/organza-saree.jpg',
+      '/images/boutique-story.jpg',
+    ],
+    rating: 4.9,
+    reviewCount: 156,
+    featured: true,
+    newArrival: true,
+    bestSeller: true,
+    sareeLength: '6.3 meters (including blouse piece)',
+    blouseIncluded: true,
+    careInstructions: [
+      'Dry clean only',
+      'Handle with care — delicate fabric',
+      'Store flat with tissue paper between folds',
+    ],
+    shippingInfo: 'Free shipping across India. Delivery within 5-7 business days.',
+    returnPolicy: 'Easy 7-day return policy. Item must be unused with original tags.',
+  },
+  {
+    id: 'prod-005',
+    name: 'Emerald Banarasi Silk Saree',
+    category: 'banarasi',
+    price: 5499,
+    originalPrice: 7499,
+    discount: 27,
+    description:
+      'A luxurious emerald green Banarasi silk saree with intricate gold and silver brocade work. The rich, heavy silk is adorned with traditional Mughal-inspired floral motifs and a stunning pallu featuring elaborate zari weaving. A statement piece for grand occasions.',
+    shortDescription: 'Luxurious brocade with Mughal-inspired motifs.',
+    fabric: 'Pure Banarasi Silk',
+    color: 'green',
+    colorHex: '#2E7D32',
+    images: [
+      '/images/banarasi-saree.jpg',
+      '/images/category-silk.jpg',
+    ],
+    rating: 4.9,
+    reviewCount: 98,
+    featured: true,
+    newArrival: false,
+    bestSeller: true,
+    sareeLength: '6.3 meters (including blouse piece)',
+    blouseIncluded: true,
+    careInstructions: [
+      'Dry clean only',
+      'Store in muslin or cotton cloth',
+      'Keep away from moisture and direct sunlight',
+      'Re-fold periodically to prevent permanent creases',
+    ],
+    shippingInfo: 'Free shipping across India. Delivery within 5-7 business days.',
+    returnPolicy: 'Easy 7-day return policy. Item must be unused with original tags.',
+  },
+  {
+    id: 'prod-006',
+    name: 'Classic Maroon Silk Saree',
+    category: 'silk',
+    price: 4299,
+    originalPrice: 5499,
+    discount: 22,
+    description:
+      'A classic maroon silk saree with a rich golden border and delicate butis throughout the body. This timeless piece embodies the elegance of traditional Indian silk weaving while maintaining a contemporary appeal. Versatile enough for temples, weddings, and formal gatherings.',
+    shortDescription: 'Timeless maroon with rich golden border.',
+    fabric: 'Pure Silk',
+    color: 'maroon',
+    colorHex: '#722F37',
+    images: [
+      '/images/category-silk.jpg',
+      '/images/category-kanchipuram.jpg',
+    ],
+    rating: 4.6,
+    reviewCount: 112,
+    featured: true,
+    newArrival: false,
+    sareeLength: '6.3 meters (including blouse piece)',
+    blouseIncluded: true,
+    careInstructions: [
+      'Dry clean recommended',
+      'Store in a cool, dry place',
+      'Iron on medium heat',
+    ],
+    shippingInfo: 'Free shipping across India. Delivery within 5-7 business days.',
+    returnPolicy: 'Easy 7-day return policy. Item must be unused with original tags.',
+  },
+  {
+    id: 'prod-007',
+    name: 'Pastel Floral Organza Saree',
+    category: 'organza',
+    price: 2799,
+    originalPrice: 3999,
+    discount: 30,
+    description:
+      'A beautiful pastel organza saree with handpainted floral patterns in soft pink and green hues. The lightweight drape creates an enchanting silhouette while the unique hand-painting technique ensures no two sarees are identical. A true work of art for the modern woman.',
+    shortDescription: 'Handpainted florals on delicate pastel organza.',
+    fabric: 'Organza with Hand Painting',
+    color: 'pink',
+    colorHex: '#D4A0A0',
+    images: [
+      '/images/pink-organza-saree.jpg',
+      '/images/organza-saree.jpg',
+    ],
+    rating: 4.8,
+    reviewCount: 73,
+    featured: true,
+    newArrival: true,
+    sareeLength: '6.3 meters (including blouse piece)',
+    blouseIncluded: true,
+    careInstructions: [
+      'Dry clean only — do not wash',
+      'Handle with extreme care',
+      'Store flat, not folded',
+      'Keep away from water and moisture',
+    ],
+    shippingInfo: 'Free shipping across India. Delivery within 5-7 business days.',
+    returnPolicy: 'Easy 7-day return policy. Item must be unused with original tags.',
+  },
+  {
+    id: 'prod-008',
+    name: 'Champagne Party Wear Saree',
+    category: 'party-wear',
+    price: 3999,
+    originalPrice: 5299,
+    discount: 25,
+    description:
+      'A glamorous champagne-gold party wear saree with heavy sequin and mirror work along the border and pallu. The shimmering fabric and contemporary design make it the perfect choice for evening soirées, cocktail parties, and receptions. Turn every head in the room with this showstopper.',
+    shortDescription: 'Glamorous sequin work on champagne shimmer fabric.',
+    fabric: 'Shimmer Georgette',
+    color: 'gold',
+    colorHex: '#C9A96E',
+    images: [
+      '/images/party-wear-saree.jpg',
+      '/images/festive-editorial.jpg',
+    ],
+    rating: 4.7,
+    reviewCount: 84,
+    featured: true,
+    newArrival: true,
+    sareeLength: '6.3 meters (including blouse piece)',
+    blouseIncluded: true,
+    careInstructions: [
+      'Dry clean only',
+      'Store carefully to protect sequin work',
+      'Avoid snagging',
+    ],
+    shippingInfo: 'Free shipping across India. Delivery within 5-7 business days.',
+    returnPolicy: 'Easy 7-day return policy. Item must be unused with original tags.',
+  },
+  // Additional products for variety in shop page
+  {
+    id: 'prod-009',
+    name: 'Ivory Cotton Handloom Saree',
+    category: 'cotton',
+    price: 1899,
+    originalPrice: 2499,
+    discount: 24,
+    description:
+      'A beautifully handwoven ivory cotton saree with subtle gold thread work and a natural, breathable texture. Perfect for everyday elegance, office wear, and casual gatherings. The handloom weave gives each saree its unique character.',
+    shortDescription: 'Handwoven cotton with subtle gold thread.',
+    fabric: 'Handloom Cotton',
+    color: 'white',
+    colorHex: '#FAFAFA',
+    images: [
+      '/images/cotton-saree.jpg',
+      '/images/category-silk.jpg',
+    ],
+    rating: 4.5,
+    reviewCount: 201,
+    featured: false,
+    newArrival: false,
+    bestSeller: true,
+    sareeLength: '6.3 meters (including blouse piece)',
+    blouseIncluded: true,
+    careInstructions: [
+      'Hand wash in cold water',
+      'Use mild detergent',
+      'Dry in shade',
+      'Iron on medium heat',
+    ],
+    shippingInfo: 'Free shipping across India. Delivery within 5-7 business days.',
+    returnPolicy: 'Easy 7-day return policy. Item must be unused with original tags.',
+  },
+  {
+    id: 'prod-010',
+    name: 'Ruby Red Bridal Silk Saree',
+    category: 'silk',
+    price: 8999,
+    originalPrice: 11999,
+    discount: 25,
+    description:
+      'An opulent ruby red bridal silk saree with heavy gold zari work covering the entire drape. Featuring traditional bridal motifs including mango, lotus, and peacock patterns, this saree is crafted for the most special day of your life.',
+    shortDescription: 'Opulent bridal silk with heavy zari work.',
+    fabric: 'Heavy Pure Silk with Zari',
+    color: 'red',
+    colorHex: '#C62828',
+    images: [
+      '/images/category-silk.jpg',
+      '/images/category-kanchipuram.jpg',
+    ],
+    rating: 5,
+    reviewCount: 56,
+    featured: false,
+    newArrival: true,
+    bestSeller: false,
+    sareeLength: '6.3 meters (including blouse piece)',
+    blouseIncluded: true,
+    careInstructions: [
+      'Professional dry clean only',
+      'Store in acid-free tissue paper',
+      'Keep in a cool, dark place',
+    ],
+    shippingInfo: 'Free shipping across India. Delivery within 5-7 business days.',
+    returnPolicy: 'Easy 7-day return policy. Item must be unused with original tags.',
+  },
+  {
+    id: 'prod-011',
+    name: 'Teal Boutique Drape Saree',
+    category: 'boutique',
+    price: 3299,
+    originalPrice: 4299,
+    discount: 23,
+    description:
+      'A contemporary teal drape saree from our boutique collection, featuring pre-stitched pleats and a modern silhouette. This fusion piece bridges the gap between traditional and contemporary, making it easy to wear and stunningly stylish.',
+    shortDescription: 'Pre-stitched contemporary drape in stunning teal.',
+    fabric: 'Crepe Silk',
+    color: 'blue',
+    colorHex: '#00695C',
+    images: [
+      '/images/category-designer.jpg',
+      '/images/boutique-story.jpg',
+    ],
+    rating: 4.6,
+    reviewCount: 45,
+    featured: false,
+    newArrival: true,
+    sareeLength: 'Pre-stitched — One size fits most',
+    blouseIncluded: true,
+    careInstructions: [
+      'Dry clean only',
+      'Store on hanger',
+      'Steam to remove wrinkles',
+    ],
+    shippingInfo: 'Free shipping across India. Delivery within 5-7 business days.',
+    returnPolicy: 'Easy 7-day return policy. Item must be unused with original tags.',
+  },
+  {
+    id: 'prod-012',
+    name: 'Black & Gold Kanchipuram Saree',
+    category: 'kanchipuram',
+    price: 6499,
+    originalPrice: 8499,
+    discount: 24,
+    description:
+      'A striking black Kanchipuram silk saree with elaborate gold zari border and pallu. The dramatic contrast of black silk against brilliant gold creates a commanding presence. Perfect for evening events and formal celebrations.',
+    shortDescription: 'Dramatic black silk with elaborate gold zari.',
+    fabric: 'Pure Kanchipuram Silk',
+    color: 'black',
+    colorHex: '#212121',
+    images: [
+      '/images/category-kanchipuram.jpg',
+      '/images/category-silk.jpg',
+    ],
+    rating: 4.9,
+    reviewCount: 78,
+    featured: false,
+    newArrival: false,
+    bestSeller: true,
+    sareeLength: '6.3 meters (including blouse piece)',
+    blouseIncluded: true,
+    careInstructions: [
+      'Dry clean only',
+      'Store in muslin cloth',
+      'Keep away from direct sunlight to prevent fading',
+    ],
+    shippingInfo: 'Free shipping across India. Delivery within 5-7 business days.',
+    returnPolicy: 'Easy 7-day return policy. Item must be unused with original tags.',
+  },
+];
+
+// ============================================================
+// HELPER FUNCTIONS
+// ============================================================
+
+export const getFeaturedProducts = (): Product[] =>
+  products.filter((p) => p.featured);
+
+export const getNewArrivals = (): Product[] =>
+  products.filter((p) => p.newArrival);
+
+export const getBestSellers = (): Product[] =>
+  products.filter((p) => p.bestSeller);
+
+export const getProductById = (id: string): Product | undefined =>
+  products.find((p) => p.id === id);
+
+export const getProductsByCategory = (category: string): Product[] =>
+  products.filter((p) => p.category === category);
+
+export const formatPrice = (price: number): string =>
+  `₹${price.toLocaleString('en-IN')}`;

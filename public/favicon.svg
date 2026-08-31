@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+  <!-- Wine background circle -->
+  <circle cx="24" cy="24" r="24" fill="#722F37"/>
+  <!-- Gold decorative arc -->
+  <path d="M12 35 C16 18, 32 18, 36 35" stroke="#C9A96E" stroke-width="1" fill="none" opacity="0.4"/>
+  <path d="M14 33 C17 20, 31 20, 34 33" stroke="#C9A96E" stroke-width="0.5" fill="none" opacity="0.3"/>
+  <!-- Letter A -->
+  <text x="24" y="30" text-anchor="middle" font-family="Georgia, serif" font-size="22" font-weight="600" fill="#FFFFF0" letter-spacing="3">A</text>
+  <!-- Gold line decoration -->
+  <line x1="16" y1="36" x2="32" y2="36" stroke="#C9A96E" stroke-width="0.8"/>
+</svg>
